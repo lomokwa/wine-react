@@ -1,3 +1,7 @@
+body {
+  background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+}
+
 nav, .button-getDrink {
   display: flex;
   justify-content: center;
@@ -31,10 +35,9 @@ h1, h2, h3, p{
 
 
 .drink-list > div {
-  background-color: rgba(42, 42, 42, 0.428);
+
   width: 100%;
   margin: 2px;
-  border: 2px solid rgb(245, 245, 245);
 }
 
 @media (min-width: 576px) {
