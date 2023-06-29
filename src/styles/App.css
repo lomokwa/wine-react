@@ -1,38 +1,68 @@
-.App {
+nav, .button-getDrink {
+  display: flex;
+  justify-content: center;
+}
+
+nav > button, .button-getDrink > button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 3vmin;
+  margin: 5px;
+  border: none;
+}
+
+h1, h2, h3, p{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (min-width: 992px) {
+  p {
+    text-align: left;;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.drink-list {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+
+.drink-list > div {
+  background-color: rgba(42, 42, 42, 0.428);
+  width: 100%;
+  margin: 2px;
+  border: 2px solid rgb(245, 245, 245);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (min-width: 576px) {
+  .drink-list >div {
+    width: 45%;
   }
 }
+
+@media (min-width: 768px) {
+  .drink-list >div {
+    width: 23%;
+  }
+}
+
+@media (min-width: 992px) {
+  .drink-list >div {
+    width: 16%;
+  }
+}
+
+.drink-list > div > img {
+  width: 100%;
+  aspect-ratio: 4/6;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+
+}
+
+
+
